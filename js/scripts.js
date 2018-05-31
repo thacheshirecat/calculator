@@ -41,4 +41,12 @@ $("form#multiply").submit(function(event) {
     $("#multoutput").text(result);
 });
 
+$("form#divide").submit(function(event) {
+    event.preventDefault();
+  var number1 = parseFloat($("#div1").val());
+  var number2 = parseFloat($("#div2").val());
+  var result = divide(number1, number2);
+    $("#divoutput").text(result);
+});
+
 });
