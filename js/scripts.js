@@ -33,4 +33,12 @@ $("form#subtract").submit(function(event) {
     $("#suboutput").text(result);
 });
 
+$("form#multiply").submit(function(event) {
+    event.preventDefault();
+  var number1 = parseInt($("#mult1").val());
+  var number2 = parseInt($("#mult2").val());
+  var result = multiply(number1, number2);
+    $("#multoutput").text(result);
+});
+
 });
